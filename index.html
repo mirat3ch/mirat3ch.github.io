@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Adeiga Precious Oreoluwa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- ===== Header ===== -->
+      <header>
+        <!-- Optional profile image -->
+        <!-- <img id="profile-img" src="profile.jpg" alt="Adeiga Precious Oreoluwa" /> -->
+
+        <h1>ADEIGA PRECIOUS OREOLUWA</h1>
+        <p class="subtitle">
+          Computer Science Student | Aspiring Backend Developer
+        </p>
+      </header>
+
+      <!-- ===== Main Content ===== -->
+      <div class="content">
+        <!-- ===== About Me ===== -->
+        <section class="section animated">
+          <h2>About Me</h2>
+          <p class="about-text">
+            Hello! My name is Adeiga Precious Oreoluwa. I currently serve as the Assistant Academic Director of NACOS and
+            was recently elected as the She Codes Africa Lead for Bowen Chapter.
+            I aspire to become a backend developer because I am curious about
+            how the backend powers the frontend, managing data, servers, and the
+            logic that makes applications work seamlessly.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <strong>📚 Institution</strong><br />Bowen University
+            </div>
+            <div class="info-card">
+              <strong>🎓 Course</strong><br />Computer Science
+            </div>
+            <div class="info-card">
+              <strong>📘 Level</strong><br />300 Level
+            </div>
+            <div class="info-card">
+              <strong>🆔 Matric Number</strong><br />BU24CSC2003
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Skills ===== -->
+        <section class="section animated">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>💻 Programming</h3>
+              <p>Python, HTML, CSS, Bootstrap</p>
+            </div>
+            <div class="skill-card">
+              <h3>🧠 Tutoring</h3>
+              <p>
+                I enjoy teaching students and helping them understand difficult
+                areas, especially mathematics.
+              </p>
+            </div>
+            <div class="skill-card">
+              <h3>🛠 Tools</h3>
+              <p>Git, GitHub, Visual Studio Code</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Interests ===== -->
+        <section class="section animated">
+          <h2>Interests</h2>
+          <div class="interests">
+            <span class="interest-tag">💻 Coding</span>
+            <span class="interest-tag">📚 Reading Books</span>
+            <span class="interest-tag">✍🏽 Content Creation</span>
+          </div>
+        </section>
+
+        <!-- ===== Goals ===== -->
+        <section class="section animated">
+          <h2>My Goals</h2>
+          <p class="about-text">
+            🎯 <strong>Short-term goal:</strong> Strengthen my skills in web and
+            backend development while excelling academically.
+          </p>
+          <p class="about-text">
+            🚀 <strong>Long-term goal:</strong> Become a professional software
+            developer working with global tech companies.
+          </p>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section class="section animated">
+          <h2>Get In Touch</h2>
+          <p class="about-text" style="text-align: center">
+            Feel free to connect with me through any of the platforms below.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:adeigaprecious@gmail.com" class="contact-btn"
+              >📧 Email</a
+            >
+            <a
+              href="https://github.com/precious2hacks"
+              target="_blank"
+              class="contact-btn"
+              >💻 GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/precious-adeiga-924876294/"
+              target="_blank"
+              class="contact-btn"
+              >💼 LinkedIn</a
+            >
+          </div>
+        </section>
+      </div>
+
+      <!-- ===== Footer ===== -->
+      <footer>
+        <p>&copy; 2025 Adeiga Precious Oreoluwa</p>
+      </footer>
+    </div>
+
+    <!-- ===== JavaScript ===== -->
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("animated");
+        });
+      });
+      document
+        .querySelectorAll(".section")
+        .forEach((section) => observer.observe(section));
+
+      document.querySelectorAll(".skill-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          card.style.transform = "scale(0.96)";
+          setTimeout(() => (card.style.transform = ""), 200);
+        });
+      });
+    </script>
+  </body>
+</html>
